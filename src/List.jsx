@@ -106,15 +106,14 @@ function List() {
   };
 
   return (
-    <div>
-      <div
-        className="w-[80vw] mx-auto sm:flex flex-col items-center  gap-2.5 md:flex-row justify-between lg:justify-between
-      "
-      >
-        <h2 className="text-[2rem] font-bold">Extensions List</h2>
-        <div className="flex gap-2.5">
+    <div w-full max-w-6xl mx-auto px-4 sm:px-6>
+      <div className=" w-[80vw] mx-auto flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center sm:text-left">
+          Extensions List
+        </h2>
+        <div className="flex flex-wrap gap-2 justify-center sm:justify-end">
           <button
-            className={`px-4 py-2.5 rounded-[24px] cursor-pointer ${
+            className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-sm sm:text-base font-medium cursor-pointer ${
               filter === "all"
                 ? "bg-[#c43b2b] text-black"
                 : "bg-[#2d3040] text-white"
@@ -124,7 +123,7 @@ function List() {
             All
           </button>
           <button
-            className={`px-4 py-2.5 rounded-[24px] cursor-pointer ${
+            className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-sm sm:text-base font-medium cursor-pointer ${
               filter === "active"
                 ? "bg-[#c43b2b] text-black"
                 : "bg-[#2d3040] text-white"
@@ -134,7 +133,7 @@ function List() {
             Active
           </button>
           <button
-            className={`px-4 py-2.5 rounded-[24px] cursor-pointer ${
+            className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-sm sm:text-base font-medium cursor-pointer ${
               filter === "inactive"
                 ? "bg-[#c43b2b] text-black"
                 : "bg-[#2d3040] text-white"
